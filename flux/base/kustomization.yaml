@@ -1,0 +1,23 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- db-dev-helmrelease.yaml
+- github-provider.yaml
+- instavote-receiver.yaml
+- lfs269-helmrepository.yaml
+- redis-dev-alert.yaml
+- redis-dev-kustomization.yaml
+- redis-dev-source.yaml
+- result-dev-helmrelease.yaml
+- result-dev-source.yaml
+- slack-notif.yaml
+- slack-provider.yaml
+- vote-dev-alert.yaml
+- vote-dev-kustomization.yaml
+- vote-dev-source.yaml
+- vote-imagepolicy.yaml
+- vote-imagerepository.yaml
+- vote-imageupdateautomation.yaml
+- worker-dev-alert.yaml
+- worker-dev-kustomization.yaml
+- worker-dev-source.yaml
