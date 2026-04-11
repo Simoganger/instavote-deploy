@@ -10,7 +10,7 @@ spec:
     name: worker-dev
     namespace: instavote
   interval: 1m0s
-  path: ./deploy/worker/dev
+  path: ./kustomize/worker/dev
   prune: true
   retryInterval: 2m0s
   sourceRef:

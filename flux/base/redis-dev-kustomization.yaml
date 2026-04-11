@@ -10,7 +10,7 @@ spec:
     name: redis-dev
     namespace: instavote
   interval: 1m0s
-  path: ./deploy/redis/dev
+  path: ./kustomize/redis/dev
   prune: true
   retryInterval: 2m0s
   sourceRef:
