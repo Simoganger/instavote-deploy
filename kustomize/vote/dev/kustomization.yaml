@@ -9,7 +9,7 @@ images:
   newTag: main-e8a06fef-1775480931 #{"$imagepolicy": "flux-system:vote:tag"}
 replicas:
 - name: vote
-  count: 4
+  count: 0
 configMapGenerator:
 - name: vote
   literals:
