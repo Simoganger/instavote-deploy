@@ -1,0 +1,13 @@
+apiVersion: flagger.app/v1beta1
+kind: Canary
+metadata:
+  name: vote
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: vote
+  analysis:
+    interval: 30s
+    threshold: 3
+    iterations: 5

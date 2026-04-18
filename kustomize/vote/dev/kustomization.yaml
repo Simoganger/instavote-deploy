@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
 - ../base
 namespace: instavote
+patchesStrategicMerge:
+  - canary.yaml
 images:
 - name: schoolofdevops/vote
   newName: simoganger/vote
